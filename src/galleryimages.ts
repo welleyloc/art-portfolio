@@ -51,5 +51,5 @@ export const BLOGIMAGES: Image[] = [
     url: 'assets/blog-2.jpg'},
     
     {title:'E College Ave', location: 'State College, PA', date: 'May 9, 2015', comment: 'Took a break at the front lawn of Penn State where students normally wait for the buses. I remember how stressed I was at the time, 3rd year into my doctorate program and nothing was working in the lab. This was my escape. Actually spelled Spats, the red restaurant served my first alligator burger.',
-    url: '/assets/blog-1.jpg'}
+    url: 'assets/blog-1.jpg'}
 ]
