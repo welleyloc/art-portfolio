@@ -1,0 +1,22 @@
+nav {
+    flex-direction: column;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+li {
+    display: inline;
+    padding: 0px 1.5em;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(35, 35, 35);
+}
+
+.nav-link:hover {
+    color: orange !important;
+}

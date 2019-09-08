@@ -1,0 +1,52 @@
+<div class="titlediv">
+    <h5>Original</h5>
+    <hr class="my-3">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col" data-toggle="modal" data-target="#oriModal" *ngFor="let original of originalImages" [ngStyle]="{'background-image':' url(' + original.url + ')', 
+             'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': 'center center'}"
+            (click)="modalUrl(original.url, 'ori')">
+        </div>
+        <div class="modal fade" id="oriModal" role="dialog">
+            <div class="modal-dialog">
+                <img id="selectedOriImage" src="">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="titlediv">
+    <h5>Fanart</h5>
+    <hr class="my-3">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col" data-toggle="modal" data-target="#fanModal" *ngFor="let fanart of fanImages" [ngStyle]="{'background-image':' url(' + fanart.url + ')', 
+            'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': 'center center'}"
+            (click)="modalUrl(fanart.url, 'fan')">
+        </div>
+        <div class="modal fade" id="fanModal" role="dialog">
+            <div class="modal-dialog">
+                <img id="selectedFanImage" src="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="titlediv">
+    <h5>Merch</h5>
+    <hr class="my-3">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col" data-toggle="modal" data-target="#merchModal" *ngFor="let merch of merchImages" [ngStyle]="{'background-image':' url(' + merch.url + ')', 
+                'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': 'center center'}"
+            (click)="modalUrl(merch.url, 'merch')">
+        </div>
+        <div class="modal fade" id="merchModal" role="dialog">
+            <div class="modal-dialog">
+                <img id="selectedMerchImage" src="">
+            </div>
+        </div>
+    </div>
+</div>

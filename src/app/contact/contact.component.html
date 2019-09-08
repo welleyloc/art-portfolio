@@ -1,0 +1,23 @@
+<div class="titlediv">
+   <h5>Contact (Form under construction)</h5>
+   <hr class="my-3">
+</div>
+<div class="container">
+   <div class="row" style="padding: 10px">
+      <div class="col-sm-7">
+         <div *ngIf="about" [innerHTML]="about"></div>
+         <p></p>
+      </div>
+      <div class="col-sm-5" style="text-align: center; overflow: auto;">
+         <p>All fields are required and must be valid.</p>
+         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <label><input placeholder="Name" formControlName="name" required></label>
+            <label><input placeholder="E-mail" formControlName="email" required ngModel email="true"></label>
+            <label><input placeholder="Subject" formControlName="subject" required></label>
+            <label><textarea placeholder="message" formControlName="textMessage" required></textarea></label>
+            <button type="submit" class="btn btn-warning" [disabled]="!contactForm.valid" required>Send</button>
+         </form>
+         <p></p>
+      </div>
+   </div>
+</div>

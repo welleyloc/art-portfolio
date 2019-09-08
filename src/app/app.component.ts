@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'art-porfolio';
+  
+  constructor(){
+  }
+
+  OnInit() {
+  }
+  
+  footText = '(c) 2019 orangeandglad. Please do not reuse images without permission.'
+
 }

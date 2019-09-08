@@ -1,0 +1,21 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.col {
+    background-color: lightsalmon;
+    border: 2px white solid;
+    height: 250px;
+    width: 70px;
+}
+
+.col:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+

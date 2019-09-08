@@ -1,0 +1,11 @@
+/* * {
+    border: solid red 1px;
+} */
+
+.zines {
+    width: 170px;
+    height: auto;
+    border-radius: 10px;
+    border: dashed 1px rgb(97, 84, 84);
+}
+

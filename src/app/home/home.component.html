@@ -1,0 +1,64 @@
+<div class="titlediv">
+    <h5>OuG Recents</h5>
+    <hr class="my-3">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="text-align: center"><img src="{{webtoon1}}" width="170px" height="auto"><img src="{{webtoon2}}" width="190px"
+                height="auto"></div>
+        <div class="col-md-6">
+            <h6>Celestial Wheel on <a href="https://www.webtoons.com/en/challenge/celestial-wheel/list?title_no=273260" target="New">Webtoon</a></h6>
+            <span>For Bing’s whole life she’s only wanted to be someone everyone in the Celestial Court knew and
+                respected. She hoped her first New Moon festival would be a chance to finally fit in. For a gleaming
+                moment it seems like that may happen when an oracle magically marks her as the hero who will save the
+                twelve Celestial clans from a faceless beast. But a cruel twist of fate causes Bing to keep her mark a
+                secret and if she’s not careful everyone may end up hunting her.</span>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="col-md-6">
+            <h6>2018 Conventions</h6>
+            <p></p>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" style="border: 1px dashed rgb(97, 84, 84); border-radius: 10px;">
+                    <div class="carousel-item active" style="height: 200px;">
+                        <img class="d-block w-100" src="{{convention1}}">
+                    </div>
+                    <div class="carousel-item" style="height: 200px;">
+                        <img class="d-block w-100" src="{{convention2}}" style="margin-top: -80px; object-fit: cover">
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                        <img class="d-block w-100" src="{{convention3}}" style="margin-top: -30px; object-fit: cover">
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                        <img class="d-block w-100" src="{{convention4}}" style="margin-top: -50px; object-fit: cover">
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                        <img class="d-block w-100" src="{{convention5}}" style="margin-top: -100px; object-fit: cover">
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                        <img class="d-block w-100" src="{{convention6}}" style="margin-top: -30px; object-fit: cover">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p *ngIf="conventionList" [innerHTML]="conventionList"></p>
+        </div>
+        <div class="col-md-6">
+            <h6>Zines</h6>
+            <p></p>
+            <div class="row" *ngFor="let zine of zineImages">
+                <div class="col-md-6" style="border: 0px white solid; padding: 0px; text-align: center;"><img src="{{zine.url}}"
+                        class="zines"></div>
+                <div class="col-md-6"><b>{{zine.comment}}</b><br>{{zine.zine}}<br><br></div>
+            </div>
+        </div>
+    </div>

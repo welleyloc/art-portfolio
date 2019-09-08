@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    background-image: url('https://static.wixstatic.com/media/de7557_e3d00aa759b249bbb789abb9db695233~mv2_d_1200_1800_s_2.jpg/v1/fill/w_515,h_772,al_c,q_90,usm_0.33_1.00_0.00/de7557_e3d00aa759b249bbb789abb9db695233~mv2_d_1200_1800_s_2.webp');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: rgb(97, 84, 84);
+    line-height: 20px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 88, 33);
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(97, 84, 84);
+}
+
+
+.fullwrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navrow {
+    margin: 0px;
+}
+
+.row {
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+.contentrow {
+    margin: auto;
+    padding: 0px;
+    
+}
+
+.footer {
+    color: white;
+    opacity: 0.8;
+}
+
+.footbox {
+    margin: auto;
+    width: 65em;
+    background-color: rgb(35, 35, 35);
+    opacity: 0.8;
+    padding: 5px;
+    z-index: 1;
+}
+.contentbox {
+    margin: auto;
+    width: 65em;
+    background-color: #ffffff;
+    z-index: 1;
+    align-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .footbox {
+        margin: auto;
+        width: 100%;
+        background-color: rgb(35, 35, 35);
+        opacity: 0.8;
+        padding: 5px;
+        z-index: 1;
+    }
+    .contentbox {
+        margin: auto;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1;
+        align-content: center;
+    }
+}
+
+.container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 2;
+}
+
+.label {
+    color: rgb(35, 35, 35);
+}
+
+input {
+    border: 1px solid rgb(35, 35, 35);
+    padding: 5px;
+    width: 20em;
+    border-radius: 3px;
+    color: rgb(35, 35, 35);
+}
+
+textarea {
+    border: 1px solid rgb(35, 35, 35);
+    padding: 5px;
+    width: 20em;
+    height: 100px;
+    border-radius: 3px;
+    color: rgb(35, 35, 35);
+
+}
+
+label {
+    width: 100%;
+    align-items: left;
+}
+
+hr {
+    border: 1px rgb(138, 123, 122) dashed;
+}
+
+h5 {
+    margin: 0px;
+    letter-spacing: 2px;
+    color: rgb(97, 84, 84);
+    text-align: center;
+    width: 100%;
+}
+
+h6 {
+    background-color: rgb(255, 221, 109);
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.titlediv {
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.btn {
+    color: rgb(35, 35, 35);
+}
