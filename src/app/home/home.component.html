@@ -4,17 +4,28 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-6" style="text-align: center"><div class="comic" style="background-image: url('assets/comic-splash.jpg')"></div></div>
         <div class="col-md-6">
-            <h6>Celestial Wheel on <a href="https://www.webtoons.com/en/challenge/celestial-wheel/list?title_no=273260" target="New">Webtoon</a></h6>
-            <span>Webcomic synopsis: For Bing’s whole life she’s only wanted to be someone everyone in the Celestial Court knew and
+            <div class="comic" style="background-image: url('assets/comic-splash.jpg')"></div>
+        </div>
+        <div class="col-md-6">
+            <h6>Celestial Wheel on <a href="https://www.webtoons.com/en/challenge/celestial-wheel/list?title_no=273260"
+                    target="_blank">Webtoon</a></h6>
+            <span>Webcomic synopsis: For Bing’s whole life she’s only wanted to be someone everyone in the Celestial
+                Court knew and
                 respected. She hoped her first New Moon festival would be a chance to finally fit in. For a gleaming
                 moment it seems like that may happen when an oracle magically marks her as the hero who will save the
                 twelve Celestial clans from a faceless beast. But a cruel twist of fate causes Bing to keep her mark a
                 secret and if she’s not careful everyone may end up hunting her.</span>
+            <p></p>
+            <p style="text-align: center">
+                <a href="{{webtoon.href}}" target="_blank"><img src="{{webtoon.url}}" width="50px"
+                        height="50px"></a>&nbsp;
+                <a href="{{instagram.href}}" target="_blank"><img src="{{instagram.url}}" width="40px"
+                        height="40px"></a>&nbsp;
+                <a href="{{twitter.href}}" target="_blank"><img src="{{twitter.url}}" width="50px" height="50px"></a>
+            </p>
         </div>
     </div>
-    <p></p>
     <div class="row">
         <div class="col-md-6">
             <h6>2018 Conventions</h6>
@@ -52,9 +63,9 @@
             <h6>Zines</h6>
             <p></p>
             <div class="row" *ngFor="let zine of zineImages">
-                <div class="col-md-6" style="border: 0px white solid; padding: 0px; text-align: center;"><img src="{{zine.url}}"
-                        class="zines"></div>
-                <div class="col-md-6"><b>{{zine.comment}}</b><br>{{zine.zine}}<br><br></div>
+                <div class="col" style="border: 0px white solid; padding: 5px; text-align: center;"><img
+                        src="{{zine.url}}" class="zines"></div>
+                <div class="col"><b>{{zine.comment}}</b><br>{{zine.zine}}<br><br></div>
             </div>
         </div>
     </div>

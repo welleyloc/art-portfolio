@@ -5,4 +5,5 @@ export class Image {
     title?: string;
     date?: string;
     location?: string;
+    href?: string;
 }

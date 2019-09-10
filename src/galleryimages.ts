@@ -49,7 +49,13 @@ export const ZINEIMAGES: Image[] = [
 export const BLOGIMAGES: Image[] = [
     {title: 'Kung Fu Tea', location: 'State College, PA', date: 'May 16, 2015', comment: "I was snacking on bubble tea right across this building, which also happened to be a friend's apartment at the time.",
     url: 'assets/blog-2.jpg'},
-    
     {title:'E College Ave', location: 'State College, PA', date: 'May 9, 2015', comment: 'Took a break at the front lawn of Penn State where students normally wait for the buses. I remember how stressed I was at the time, 3rd year into my doctorate program and nothing was working in the lab. This was my escape. Actually spelled Spats, the red restaurant served my first alligator burger.',
     url: 'assets/blog-1.jpg'}
+]
+
+export const LOGOS: Image[] = [
+    {comment: 'webtoon', url: 'assets/webtoon-logo.png', href: 'https://www.webtoons.com/en/challenge/celestial-wheel/list?title_no=273260'},
+    {comment: 'instagram', url: 'assets/ig-logo.png', href: 'https://www.instagram.com/orangeandglad/'},
+    {comment: 'twitter', url: 'assets/twitter-logo.png', href: 'https://twitter.com/orangeandglad'},
+
 ]

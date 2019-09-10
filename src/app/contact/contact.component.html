@@ -1,22 +1,23 @@
 <div class="titlediv">
-   <h5>Contact (Form under construction)</h5>
+   <h5>About</h5>
    <hr class="my-3">
 </div>
 <div class="container">
-   <div class="row" style="padding: 10px">
-      <div class="col-sm-7">
-         <div *ngIf="about" [innerHTML]="about"></div>
+   <div class="row" style="padding-bottom: 10px;">
+      <div class="col-sm-6" style="padding: 10px; height: 300px; width: 100%; border-radius: 10px" [ngStyle]="{'background-image':'url(' + aboutImage + ')', 
+      'background-size': 'cover', 'background-repeat': 'no-repeat', 'background-position': 'center center'}"></div>
+      <div class="col-sm-6">
          <p></p>
-      </div>
-      <div class="col-sm-5" style="text-align: center; overflow: auto;">
-         <p>All fields are required and must be valid.</p>
-         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <label><input placeholder="Name" formControlName="name" required></label>
-            <label><input placeholder="E-mail" formControlName="email" required ngModel email="true"></label>
-            <label><input placeholder="Subject" formControlName="subject" required></label>
-            <label><textarea placeholder="message" formControlName="textMessage" required></textarea></label>
-            <button type="submit" class="btn btn-warning" [disabled]="!contactForm.valid" required>Send</button>
-         </form>
+         <p [innerHTML]="about"></p>
+         <p [innerHTML]="follow"></p>
+
+         <p style="text-align: center"><a href="{{webtoon.href}}" target="_blank"><img src="{{webtoon.url}}"
+                  width="50px" height="50px"></a>&nbsp;
+            <a href="{{instagram.href}}" target="_blank"><img src="{{instagram.url}}" width="40px"
+                  height="40px"></a>&nbsp;
+            <a href="{{twitter.href}}" target="_blank"><img src="{{twitter.url}}" width="50px" height="50px"></a>
+         </p>
+         <p></p>
          <p></p>
       </div>
    </div>

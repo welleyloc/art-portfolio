@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms'
+import { LOGOS } from '../../galleryimages';
 
 @Component({
   selector: 'app-contact',
@@ -8,27 +8,18 @@ import { FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class ContactComponent implements OnInit {
 
-  contactForm = new FormGroup({
-      name: new FormControl('', Validators.required),
-      email: new FormControl('', Validators.required),
-      subject: new FormControl('',Validators.required),
-      textMessage: new FormControl('', Validators.required)
+    webtoon = LOGOS.filter(item => item.comment == 'webtoon')[0];
+    instagram = LOGOS[1];
+    twitter = LOGOS[2];
 
-  })
+    about = 'OuG is composed of an artist (orange) and writer (glad) for Celestial Wheel. We are nerds 3/4 of the time and artsy for the remaining.'
+    follow = 'Subscribe to our webcomic, or follow the artist on Twitter and Instagram for updates! We may have other social media accounts, but we only frequent these recently. For any inquiries, please send us  message on Instagram';
+    aboutImage = 'assets/about.jpeg';
+
 
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  onSubmit() {
-    console.log("111111");
-    var mail = document.createElement("a");
-    console.log("22222");
-    mail.href = "mailto:orangeandglad@gmail.com";
-    console.warn(this.contactForm.value);
-  }
-
-  about = "Please use this form for any inquiries. I'll get back to you as soon as I can! You can also follow me  on Twitter and Instagram (@orangeandglad) for updates!";
 }

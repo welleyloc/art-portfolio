@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ZINEIMAGES } from '../../galleryimages';
+import { LOGOS } from 'src/galleryimages';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,10 @@ export class HomeComponent implements OnInit {
 
   zineImages = ZINEIMAGES;
 
+  webtoon = LOGOS.filter(item => item.comment == 'webtoon')[0];
+  instagram = LOGOS[1];
+  twitter = LOGOS[2];
+  
   constructor() { }
 
   ngOnInit() {
@@ -22,5 +27,4 @@ export class HomeComponent implements OnInit {
   convention4 = 'assets/con-4.jpg';
   convention5 = 'assets/con-5.jpg';
   conventionList = '<p><br>Triad Anime Con (Charlotte, NC)<br>Animazement (Raleigh, NC)<br>Asheville Anime Regional Con (Charlotte, NC)<br>Liberty City Anime Con (New York, NY)<br>Queen City Anime Con (Charlotte, NC)<br>Crunchyroll Expo (San Jose, CA)</p>';
-  webtoon = 'assets/comic-splash.jpg';
 }
