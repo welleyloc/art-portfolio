@@ -1,4 +1,4 @@
-### ArtPorfolio - [Live page](https://welleyloc.github.io/art-portfolio/home)
+### ArtPorfolio - [Live page](https://welleyloc.github.io/art-portfolio/)
 
 <img src="https://github.com/welleyloc/art-portfolio/blob/master/screenshot.png?raw=true" width="500">
 
