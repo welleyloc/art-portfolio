@@ -1,4 +1,6 @@
-# ArtPorfolio
+### ArtPorfolio - [Live page](https://welleyloc.github.io/art-portfolio/home)
+
+<img src="https://github.com/welleyloc/art-portfolio/blob/master/screenshot.png?raw=true" width="500">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
 
